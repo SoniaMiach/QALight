@@ -2,23 +2,21 @@ package java_hm_10;
 
 class CoffeeOrder extends Order {
 
-    private String size;
-    public CoffeeOrder(int orderNumber, String size) {
+    private CoffeeSize size;
+    public CoffeeOrder(int orderNumber, CoffeeSize size) {
         super(orderNumber);
-
         if (size == null) {
             throw new IllegalArgumentException("Size cannot be null");
         }
-
         this.size = size;
     }
 
     @Override
     public double getPrice() {
-        return switch (size.toLowerCase()) {
-            case "small" -> 2.5;
-            case "medium" -> 3.5;
-            case "large" -> 4.5;
+        return switch (size) {
+            case SMALL -> 2.5;
+            case MEDIUM -> 3.5;
+            case LARGE -> 4.5;
             default -> throw new IllegalArgumentException("Unknown size: " + size);
         };
     }
