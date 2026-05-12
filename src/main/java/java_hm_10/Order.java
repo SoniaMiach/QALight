@@ -1,5 +1,7 @@
 package java_hm_10;
 
+import java_hm_10.enums.OrderStatus;
+
 abstract class Order implements Pricable, Printable {
 
     protected int orderNumber;

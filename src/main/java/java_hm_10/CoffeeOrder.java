@@ -1,5 +1,7 @@
 package java_hm_10;
 
+import java_hm_10.enums.CoffeeSize;
+
 class CoffeeOrder extends Order {
 
     private CoffeeSize size;
