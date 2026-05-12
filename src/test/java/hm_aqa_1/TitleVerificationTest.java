@@ -37,10 +37,5 @@ public class TitleVerificationTest  {
         } finally {
             driver.quit();
         }
-
-
-
-
-
     }
 }
