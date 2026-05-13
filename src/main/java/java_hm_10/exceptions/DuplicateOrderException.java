@@ -1,4 +1,4 @@
-package java_hm_10;
+package java_hm_10.exceptions;
 
 public class DuplicateOrderException extends Exception {
     public DuplicateOrderException(String message) {
