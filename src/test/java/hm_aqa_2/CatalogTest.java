@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,7 +21,7 @@ public class CatalogTest {
             driver.get("https://hotline.ua/");
             driver.manage().window().maximize();
 
-            WebElement catalogueButton = driver.findElement(By.xpath("//div[@class='button-menu-main']"));
+            WebElement catalogueButton = driver.findElement(By.xpath("//div[@class='button-menu-main ']"));
             waiter.until(ExpectedConditions.elementToBeClickable(catalogueButton));
             catalogueButton.click();
 
@@ -30,7 +29,7 @@ public class CatalogTest {
             waiter.until(ExpectedConditions.elementToBeClickable(energyElement));
             energyElement.click();
 
-            WebElement titleElement = driver.findElement(By.xpath("h1[@class='title-page flex middle-xs section-title']"));
+            WebElement titleElement = driver.findElement(By.xpath("//h1[@class='title-page flex middle-xs section-title']"));
             waiter.until(ExpectedConditions.visibilityOf(titleElement));
             String textTitle = titleElement.getText();
 
