@@ -49,9 +49,6 @@ public class AlloCardTest {
             );
             continueToPursageButton.click();
 
-
-
-
         }finally {
             driver.quit();
         }
