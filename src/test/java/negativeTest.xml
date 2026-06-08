@@ -1,0 +1,13 @@
+<suite name="PositiveTests">
+    <test name="Positive">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="hm_aqa_4"/>
+        </packages>
+    </test>
+</suite>

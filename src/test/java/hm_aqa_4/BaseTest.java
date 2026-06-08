@@ -12,8 +12,8 @@ public class BaseTest {
     @BeforeMethod
     public void setDriver(){
         driver = new ChromeDriver();
-        driver.get("https://allo.ua//");
         driver.manage().window().maximize();
+        driver.get("https://allo.ua/");
     }
 
     @AfterMethod
@@ -24,5 +24,4 @@ public class BaseTest {
     public WebDriver getDriver(){
         return driver;
     }
-
 }
