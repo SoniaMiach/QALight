@@ -1,0 +1,7 @@
+<suite name="AllTests">
+    <test name="All">
+        <packages>
+            <package name="hm_aqa_4"/>
+        </packages>
+    </test>
+</suite>
